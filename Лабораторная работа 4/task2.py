@@ -19,6 +19,6 @@ def poly_musor():
         a += l[key]
     g = {}
     for v in l:
-        g[v] = int(l[v]*100/a)
+         g.update({v: round(l[v]*100/a, 2)})
     return g
 print(poly_musor())
